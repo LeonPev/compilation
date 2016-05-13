@@ -569,13 +569,14 @@ bool follow_RECEIVER_A(TokenType type)
 	}
 }
 
+
 int getLineNumberAnyway()
 {
 	Token t = NextToken();
 	t = BackToken();
 	return t.lineNumber;
 }
-printResult(const char* result, const char* rule, int line)
+void printResult(const char* result, const char* rule, int line)
 {
 	printf("result:%s rule:%s line:%d", result, rule, line);
 	fprintf(errorsFile, "result:%s rule:%s line:%d", result, rule, line);

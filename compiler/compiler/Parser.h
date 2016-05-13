@@ -34,5 +34,5 @@ bool follow_EXPRESSION_A(TokenType type);
 bool follow_RECEIVER_A(TokenType type);
 
 int getLineNumberAnyway();
-printResult(const char* result, const char* rule, int line);
+void printResult(const char* result, const char* rule, int line);
 bool OpenFileOut(const char* path);
